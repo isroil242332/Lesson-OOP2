@@ -17,7 +17,7 @@ class User:
         self._name = name
 
 class Admin(User):
-    def init(self, user_id, name):
+    def __init__(self, user_id, name):
         super().__init__(user_id, name)
         self.level = 'admin'
 
